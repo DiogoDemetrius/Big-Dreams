@@ -1,0 +1,19 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: linear-gradient(to bottom, #111111, rgb(23, 23, 23));
+}
+
+.radial-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(circle, #383838 0%, transparent 70%);
+  filter: blur(1000%);
+}

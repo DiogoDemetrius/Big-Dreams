@@ -1,0 +1,154 @@
+.ajustecentro {
+  height: 540px;
+  width: 100%;
+  display: flex;
+  align-items: center; /*background-color: rgb(56, 56, 56);*/
+  flex-direction: column;
+}
+.imagens {
+  height: 375px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; /*background-color: rgb(99, 99, 99);*/
+}
+.n1 {
+  top: auto;
+  height: 220px;
+  width: 160px;
+  position: absolute;
+  z-index: 4;
+}
+.n1um {
+  height: 220px;
+  width: 160px;
+  border-radius: 20px;
+  background-color: rgb(194, 194, 194);
+}
+
+.n2 {
+  height: 240px;
+  width: 420px;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  opacity: 0.9;
+  filter: blur(3px);
+}
+.n2um {
+  height: 198px;
+  width: 144px;
+  border-radius: 20px;
+  background-color: rgb(71, 71, 71);
+}
+.n2dois {
+  height: 198px;
+  width: 144px;
+  border-radius: 20px;
+  background-color: rgb(71, 71, 71);
+}
+.n3 {
+  height: 108px;
+  width: 580px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+.n3um {
+  height: 148px;
+  width: 108px;
+  border-radius: 20px;
+  background-color: rgb(194, 194, 194);
+}
+.n3dois {
+  height: 148px;
+  width: 108px;
+  border-radius: 20px;
+  background-color: rgb(194, 194, 194);
+}
+.n4 {
+  height: 125px;
+  width: 270px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 250px;
+  opacity: 0.25;
+  filter: blur(8px);
+}
+.n4um {
+  height: 125px;
+  width: 91px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.n4dois {
+  height: 125px;
+  width: 91px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.seta {
+  margin-top: 120px;
+  position: absolute;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 2rem;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seta-esquerda {
+  left: 25%;
+}
+.seta-direita {
+  right: 25%;
+}
+.n1,
+.n2,
+.n3,
+.n4 {
+  transition: all 0.5s;
+}
+
+.texto {
+  color: white;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+  font-family: 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;          /* dá mais presença ao título */
+  font-size: 1.8rem;         /* maior que o conteúdo */
+  text-align: center;
+  color: #fff;               /* branco para contraste com o carrossel */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5); /* dá profundidade e legibilidade */
+  margin: 0;
+}
+
+.conteudo {
+  font-family: 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;          /* leve, para não competir com o título */
+  font-size: 1rem;           
+  text-align: center;
+  color: #eee;               /* levemente mais claro que o fundo do título */
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  margin-top: 10px;
+  line-height: 1.5;          /* melhora leitura em blocos de texto */
+}
