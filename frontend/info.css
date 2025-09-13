@@ -68,3 +68,12 @@ img {
     height: 70px;
     margin-top: 30px;
 }
+
+.interacao:hover {
+    scale: 1.05;
+    transition: 0.7s;
+}
+
+.interacao {
+    transition: 0.7s;
+}

@@ -26,7 +26,7 @@ body {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: -1; /* acima do radial e hero/header, abaixo do carrossel */
+  z-index: 0; /* acima do radial e hero/header, abaixo do carrossel */
   overflow: hidden;
 }
 
