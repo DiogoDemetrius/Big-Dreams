@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Textos aleatórios para cada quadro
   const textos = [
-    { titulo: "Criatividade", conteudo: "Transformando ideias em experiências únicas." },
-    { titulo: "Inovação", conteudo: "Projetos que inspiram e mudam a forma de ver o mundo." },
-    { titulo: "Design", conteudo: "Estética e funcionalidade andando juntas." },
-    { titulo: "Tecnologia", conteudo: "Soluções inteligentes para problemas reais." },
-    { titulo: "Estratégia", conteudo: "Planejamento que maximiza resultados." },
-    { titulo: "Impacto", conteudo: "Cada projeto deixa sua marca." },
-    { titulo: "Paixão", conteudo: "O combustível que move tudo que fazemos." }
+    { titulo: "Criatividade", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " },
+    { titulo: "Inovação", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ." },
+    { titulo: "Design", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " },
+    { titulo: "Tecnologia", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " },
+    { titulo: "Estratégia", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " },
+    { titulo: "Impacto", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " },
+    { titulo: "Paixão", conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " }
   ];
 
   let centerIndex = 0;

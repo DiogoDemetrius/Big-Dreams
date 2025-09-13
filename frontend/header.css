@@ -30,6 +30,7 @@
   background-color: rgba(255, 255, 255, 0.192);
   color: rgb(255, 255, 255);
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .nav {
@@ -52,4 +53,9 @@ a {
   font-family: poppins;
   font-weight: 300;
   font-size: medium;
+}
+
+a:hover {
+  color: rgb(167, 167, 167);
+  transition: 0.4s;
 }
