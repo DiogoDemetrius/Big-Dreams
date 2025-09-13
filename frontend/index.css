@@ -13,9 +13,41 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
   background: radial-gradient(circle, #313131 0%, #2a2a2a 40%, #1a1a1a 70%, transparent 100%);
+}
+
+/* camada da neve */
+.snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1; /* acima do radial e hero/header, abaixo do carrossel */
+  overflow: hidden;
+}
+
+.snow span {
+  position: absolute;
+  top: -10px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(1px);
+  animation: fall linear infinite;
+}
+
+/* animação da queda */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
 }
 
 h1 {
