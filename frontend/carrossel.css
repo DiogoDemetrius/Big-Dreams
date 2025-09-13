@@ -23,7 +23,11 @@
   height: 220px;
   width: 160px;
   border-radius: 20px;
-  background-color: rgb(194, 194, 194);
+  /*background-color: rgb(194, 194, 194);*/
+  background-image: url('./src/img/lamp-carrossel.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 
 .n2 {
@@ -41,13 +45,20 @@
   height: 198px;
   width: 144px;
   border-radius: 20px;
-  background-color: rgb(71, 71, 71);
+  /*background-color: rgb(71, 71, 71);*/
+  background-image: url('./src/img/inovacao.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 .n2dois {
   height: 198px;
   width: 144px;
   border-radius: 20px;
-  background-color: rgb(71, 71, 71);
+  background-image: url('./src/img/paixao.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 .n3 {
   height: 108px;
@@ -64,13 +75,19 @@
   height: 148px;
   width: 108px;
   border-radius: 20px;
-  background-color: rgb(194, 194, 194);
+  background-image: url('./src/img/design.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 .n3dois {
   height: 148px;
   width: 108px;
   border-radius: 20px;
-  background-color: rgb(194, 194, 194);
+  background-image: url('./src/img/impacto.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 .n4 {
   height: 125px;
@@ -87,13 +104,19 @@
   height: 125px;
   width: 91px;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  background-image: url('./src/img/tecnologia.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 .n4dois {
   height: 125px;
   width: 91px;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  background-image: url('./src/img/estrategia.jpg');
+  background-size: cover;       /* cobre toda a div */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
 }
 .seta {
   margin-top: 120px;

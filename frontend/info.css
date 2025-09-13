@@ -19,6 +19,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    z-index: 5;
 }
 
 .card {
@@ -72,6 +73,7 @@ img {
 .interacao:hover {
     scale: 1.05;
     transition: 0.7s;
+    background-color: #424242;
 }
 
 .interacao {

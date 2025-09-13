@@ -120,20 +120,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // FLIP animation
     const running = [];
     allElements.forEach(el => {
-      const first = firstRects.get(el);
-      const last = el.getBoundingClientRect();
-      const dx = first.left - last.left;
-      const dy = first.top - last.top;
-      const sx = first.width / last.width || 1;
-      const sy = first.height / last.height || 1;
-      el.style.transition = 'none';
-      el.style.transformOrigin = 'center center';
-      el.style.transform = `translate(${dx}px, ${dy}px) scale(${sx}, ${sy})`;
-      el.getBoundingClientRect();
-      el.style.transition = `transform ${DURATION}ms ${EASING}, opacity ${DURATION}ms ${EASING}, filter ${DURATION}ms ${EASING}`;
-      running.push(el);
-      requestAnimationFrame(() => el.style.transform = 'none');
-    });
+  const first = firstRects.get(el);
+  const last = el.getBoundingClientRect();
+  const dx = first.left - last.left;
+  const dy = first.top - last.top;
+  const sx = first.width / last.width || 1;
+  const sy = first.height / last.height || 1;
+
+  el.style.transition = 'none';
+  el.style.transformOrigin = 'center center';
+  el.style.transform = `translate(${dx}px, ${dy}px) scale(${sx}, ${sy})`;
+  el.getBoundingClientRect();
+
+  // aqui aplicamos o transition antes de animar
+  el.style.transition = `transform ${DURATION}ms ${EASING}, opacity ${DURATION}ms ${EASING}, filter ${DURATION}ms ${EASING}`;
+
+  // anima transform + blur + opacity juntos
+  requestAnimationFrame(() => {
+    const estado = estados[elementsByState.indexOf(el)];
+    el.style.transform = 'none';
+    el.style.opacity = estado.style.opacity;
+    el.style.filter = estado.style.filter;
+  });
+
+  running.push(el);
+});
 
     // Atualiza índice do centro e o texto
     centerIndex = (centerIndex + (direc ? 1 : -1) + textos.length) % textos.length;
@@ -153,6 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  document.querySelector('.seta-direita')?.addEventListener('click', () => animate(true));
-  document.querySelector('.seta-esquerda')?.addEventListener('click', () => animate(false));
+  document.querySelector('.seta-esquerda')?.addEventListener('click', () => animate(true));
+  document.querySelector('.seta-direita')?.addEventListener('click', () => animate(false));
 });
